@@ -1,0 +1,200 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+/*
+*/
+
+@font-face {
+    font-family: 'Arial';
+    src: url("fons/ArialBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial-Regular';
+    src: url("fons/ArialRegular/ArialRegular.eot") format(''),
+    url("fons/ArialRegular/ArialRegular.ttf") format('truetype'),
+    url("fons/ArialRegular/ArialRegular.woff") format('woff');
+}
+
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+
+.products-of-the-week {
+    text-align: center;
+    margin: 40px 0 0 0;
+    padding: 0 0 50px 0;
+    overflow: hidden;
+}
+
+.the-week {
+    font-size: 48px;
+}
+
+.box-cards {
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+}
+
+.card {
+    max-width: 380px;
+    max-height: 482px;
+    position: relative;
+    box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links-new {
+    position: absolute;
+    width: 263px;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-product {
+    background-color: #FDCFF3;
+}
+
+.last-product {
+    background-color: #FFCF56;
+}
+
+.item-link {
+    border-radius: 8px;
+    font-family: Arial-Regular, sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2F2F2F;
+    padding: 5px 16px 5px 16px;
+}
+
+.img {
+    max-width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.about-product {
+    text-align: left;
+    margin: 24px auto 0 auto;
+    width: 90%;
+}
+
+.name-product {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.description {
+    margin: 16px 0 0 0;
+    font-family: Arial-Regular, sans-serif;
+    line-height: 24px;
+}
+
+.basket {
+    font-family: Arial-Regular, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    width: 90%;
+    height: 48px;
+    margin: 7px auto 25px auto;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    letter-spacing: 1px;
+    color: #42940F;
+    cursor: pointer;
+}
+
+
+.basket:hover:not(.no-hover) {
+    background-color: #42940F;
+    color: #FFFFFF;
+}
+
+.basket:active:not(.no-hover) {
+    background-color: #1F5200;
+    color: #FFFFFF;
+}
+
+
+.last-basket {
+    background: #4E4E4E;
+    border: 1px solid #4E4E4E;
+    color: #FFFFFF;
+}
+
+@media (max-width: 650px) {
+    .box-cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 660px ) and (max-width: 1100px) {
+    .card {
+        width: 300px;
+        height: 440px;
+    }
+}
+
+@media (min-width: 810px) {
+    .card {
+        width: 380px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 800px) {
+    .products-of-the-week {
+        margin: 5px 0 20px 0;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .the-week {
+        font-size: 1.5rem;
+    }
+
+    .box-cards {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .links-new {
+        width: 100%;
+        margin: 10px 0 0 0;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .box-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 5vw;
+    }
+}
+
+
+
+
+
